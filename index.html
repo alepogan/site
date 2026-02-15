@@ -24,9 +24,9 @@
 
         <h2>Sobre Mim</h2>
         <img src="gatinho.jpg" alt="Imagem de foto de perfil" title="Imagem de perfil">
-        
+
         <article>
-            <p>Olá, terráqueos. Sou Alessandra, designer e adoradora de gatos e mamãe da Sofia.</p>
+            <p>Olá, terráqueos. Sou Alessandra, designer e adoradora de gatos.</p>
         </article>
 
         <aside>
@@ -65,12 +65,35 @@
 
             <p> Tem um projeto em mente? Entre em contato.</p>
 
-            <address>
+            <form action="">
 
-                E-mail: <a href="mailto:alepogan@gmail.com">alepogan@gmail.com</a> <br>
-                WhatsApp: <a href="tell:+5547992610664">(47) 99261-0664</a>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
 
-            </address>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tell" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                   
+<br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea> <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label> <br>
+
+                <input type="submit" value="Enviar mensagem"> 
+
+            </form>
 
         </section>
 
